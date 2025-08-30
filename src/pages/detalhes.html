@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detalhes do Filme</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../styles/detalhes.css" />
+    <link rel="stylesheet" href="../styles/global.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../../index.html"
+          ><img id="logo" src="../assets/img/logo.png" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end ps-40"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="../../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./catalogo.html">Catálogo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./sobre.html">Sobre</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container my-5">
+      <div class="row g-4">
+        <div class="col-md-4 d-flex justify-content-center">
+          <img
+            src="../assets/img/pulp-fiction.jpg"
+            alt="Poster do Filme"
+            class="movie-poster img-fluid"
+          />
+        </div>
+        <div class="col-md-7 movie-info">
+          <h2>Pulp Fiction</h2>
+          <p><strong>Gênero:</strong> Crime / Drama</p>
+          <p><strong>Duração:</strong> 2h 34min</p>
+          <p>
+            <strong>Sinopse:</strong> Em uma série de histórias entrelaçadas,
+            <strong>Pulp Fiction</strong> segue diversos personagens do submundo
+            criminal de Los Angeles. O filme traz aventuras inesperadas, como o
+            dia a dia de dois assassinos, a recuperação de uma mala misteriosa e
+            a redenção de um boxeador. Com diálogos marcantes e uma estrutura
+            não-linear, o filme é um retrato sombrio e cativante da vida de
+            criminosos e suas decisões fatídicas.
+          </p>
+          <button class="btn btn-danger mt-3 col-2">Assistir Trailer</button>
+        </div>
+      </div>
+    </div>
+    <footer
+      class="d-flex flex-wrap justify-content-between align-items-center py-3 px-5 my-4 border-top"
+    >
+      <p class="col-md-4 mb-0 text-body-secondary">© 2025 CineTimão</p>
+      <a
+        href="/"
+        class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+        aria-label="Bootstrap"
+      >
+        <svg class="bi me-2" width="40" height="32" aria-hidden="true">
+          <use xlink:href="#bootstrap"></use>
+        </svg>
+      </a>
+      <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item">
+          <a href="../../index.html" class="nav-link px-2 text-body-secondary">Home</a>
+        </li>
+        <li class="nav-item">
+          <a
+            href="./catalogo.html"
+            class="nav-link px-2 text-body-secondary"
+            >Catálogo</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            href="./sobre.html"
+            class="nav-link px-2 text-body-secondary"
+            >Sobre</a
+          >
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
