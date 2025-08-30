@@ -13,7 +13,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="src/styles/index.css">
+    <link rel="stylesheet" href="src/styles/index.css" />
     <link rel="stylesheet" href="src/styles/global.css" />
     <title>Hands on</title>
   </head>
@@ -43,10 +43,10 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Catálogo</a>
+              <a class="nav-link" href="src/pages/catalogo.html">Catálogo</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contato</a>
+              <a class="nav-link" href="src/pages/sobre.html">Sobre</a>
             </li>
           </ul>
         </div>
@@ -98,14 +98,50 @@
     <section>
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="src/assets/img/aristogatas.webp" alt=""></div>
-          <div class="swiper-slide"><img src="src/assets/img/interstellar.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="src/assets/img/" alt=""></div>
+          <div class="swiper-slide">
+            <img src="src/assets/img/aristogatas.webp" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="src/assets/img/o-poderoso-chefao.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="src/assets/img/era-uma-vez-em-hollywood.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="src/assets/img/laranja-mecanica.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="src/assets/img/pulp-fiction.jpg" alt="" />
+          </div>
         </div>
         <div class="swiper-pagination"></div>
       </div>
     </section>
-
+    <footer
+  class="d-flex flex-wrap justify-content-between align-items-center py-3 px-5 my-4 border-top"
+>
+  <p class="col-md-4 mb-0 text-body-secondary">© 2025 CineTimão</p>
+  <a
+    href="/"
+    class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+    aria-label="Bootstrap"
+  >
+    <svg class="bi me-2" width="40" height="32" aria-hidden="true">
+      <use xlink:href="#bootstrap"></use>
+    </svg>
+  </a>
+  <ul class="nav col-md-4 justify-content-end">
+    <li class="nav-item">
+      <a href="index.html" class="nav-link px-2 text-body-secondary">Home</a>
+    </li>
+    <li class="nav-item">
+      <a href="./src/pages/catalogo.html" class="nav-link px-2 text-body-secondary">Catálogo</a>
+    </li>
+    <li class="nav-item">
+      <a href="./src/pages/sobre.html" class="nav-link px-2 text-body-secondary">Sobre</a>
+    </li>
+  </ul>
+</footer>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
@@ -114,11 +150,11 @@
       var swiper = new Swiper(".mySwiper", {
         slidesPerView: 3,
         spaceBetween: 30,
+        grabCursor: true,
+        loop: true,
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
-          grabCursor: true,
-          infite: true
         },
       });
     </script>
